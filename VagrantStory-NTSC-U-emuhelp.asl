@@ -1,27 +1,29 @@
-//
-// Scriptable Auto Splitter for Vagrant Story (PSOne) 
-//
-// Supported SKUs: SLUS-01040 (NTSC-U)
-//
-// Supported emulators:
-//   - Duckstation
-//   - Mednafen
-//   - PCSX_Redux
-//   - Retroarch
-//   - Xebra
-//   - ePSXe
-//   - pSX
-//
-// Requirements:
-//   - emu-help (https://github.com/Jujstme/emu-help)
-//
-//
-// Supported actions:
-//   - split when BossHP == 0 (incliding some mini-bosses)
-//   - start the timer when the game starts (New Game, New Game+)
-//   - reset the timer when you get back to the title screen 
-//   - handles multi-enemy fights in any order (Duane, Grissom, Tieger and Neesa)
-//
+/*
+
+   Scriptable Auto Splitter for Vagrant Story (PSOne) 
+
+   Supported SKUs: SLUS-01040 (NTSC-U)
+
+   Supported emulators:
+   - Duckstation
+   - Mednafen
+   - PCSX_Redux
+   - Retroarch
+   - Xebra
+   - ePSXe
+   - pSX
+
+   Supported actions:
+   - splits when BossHP == 0 (including some mini-bosses)
+   - starts the timer when the game starts (New Game, New Game+)
+   - resets the timer when you get back to the title screen 
+   - handles multi-enemy fights in any order (Duane, Grissom, Tieger and Neesa)
+
+   Requirements:
+   - LiveSplit (https://github.com/LiveSplit/LiveSplit)
+   - emu-help (https://github.com/Jujstme/emu-help)
+
+ */
 
 state("LiveSplit") {}
 
@@ -308,4 +310,3 @@ split {
             return (old.GuildensternP2HP > 0 && current.GuildensternP2HP == 0);
     }
 }
-
