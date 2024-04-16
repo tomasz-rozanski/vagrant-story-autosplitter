@@ -17,7 +17,7 @@
    - splits when BossHP == 0 (including some mini-bosses)
    - starts the timer when the game starts (New Game, New Game+)
    - resets the timer when you get back to the title screen 
-   - handles multi-enemy fights in any order (Duane, Grissom, Tieger and Neesa)
+   - handles multi-enemy fights in any kill order (Duane, Grissom, Tieger and Neesa)
 
    Requirements:
    - LiveSplit (https://github.com/LiveSplit/LiveSplit)
